@@ -14,6 +14,7 @@ import Link from './collections/Link';
 import Users from './collections/Users';
 
 export default buildConfig({
+    serverURL: process.env.SERVER_URL,
     admin: {
         user: Users.slug,
         bundler: webpackBundler()

@@ -3,6 +3,10 @@ import type { GlobalConfig } from 'payload/types';
 const AboutPage: GlobalConfig = {
     slug: 'about-page',
     label: 'About Page',
+    access: {
+        read: () => true,
+        update: () => true
+    },
     fields: [
         {
             name: 'page_title',
@@ -31,20 +35,9 @@ const AboutPage: GlobalConfig = {
             fields: [
                 // TODO: is this what we need?
                 {
-                    name: 'exhibition_title',
-                    label: 'Exhibition Title',
-                    type: 'text'
+                    name: 'exhibition',
+                    type: 'richText'
                 },
-                {
-                    name: 'exhibition_date',
-                    label: 'Exhibition Date',
-                    type: 'text'
-                },
-                {
-                    name: 'exhibition_location',
-                    label: 'Exhibition Location',
-                    type: 'text'
-                }
             ]
         },
         {
@@ -59,20 +52,10 @@ const AboutPage: GlobalConfig = {
             fields: [
                 // TODO: is this what we need?
                 {
-                    name: 'publication_title',
+                    name: 'publication',
                     label: 'Publication Title',
-                    type: 'text'
+                    type: 'richText'
                 },
-                {
-                    name: 'publication_date',
-                    label: 'Publication Date',
-                    type: 'text'
-                },
-                {
-                    name: 'publication_location',
-                    label: 'Publication Location',
-                    type: 'text'
-                }
             ]
         }
     ]
