@@ -33,7 +33,6 @@ const AboutPage: GlobalConfig = {
             label: 'Exhibitions List',
             type: 'array',
             fields: [
-                // TODO: is this what we need?
                 {
                     name: 'exhibition',
                     type: 'richText'

@@ -22,6 +22,10 @@ const ContactPage: GlobalConfig = {
             name: 'header_pargraph',
             label: 'Header Paragraph',
             type: 'richText'
+        },
+        {
+            name: 'test',
+            type: 'textarea'
         }
     ]
 };
