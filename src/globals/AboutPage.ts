@@ -30,14 +30,7 @@ const AboutPage: GlobalConfig = {
         },
         {
             name: 'exhibitions_list',
-            label: 'Exhibitions List',
-            type: 'array',
-            fields: [
-                {
-                    name: 'exhibition',
-                    type: 'richText'
-                },
-            ]
+            type: 'richText'
         },
         {
             name: 'publications_title',
@@ -46,16 +39,7 @@ const AboutPage: GlobalConfig = {
         },
         {
             name: 'publications_list',
-            label: 'Publications List',
-            type: 'array',
-            fields: [
-                // TODO: is this what we need?
-                {
-                    name: 'publication',
-                    label: 'Publication Title',
-                    type: 'richText'
-                },
-            ]
+            type: 'richText'
         }
     ]
 };
